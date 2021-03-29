@@ -1,24 +1,24 @@
 command = input()
  
-users = {}
+my_users = {}
 result = {}
 while command != "Lumpawaroo":
     if len(command.split(" | ")) == 2:
         value, key = command.split(" | ")
  
-        if key not in users:
-            users[key] = value
+        if key not in my_users:
+            my_users[key] = value
  
     elif len(command.split(" -> ")) == 2:
         key, value = command.split(" -> ")
  
-        users[key] = value
+        my_users[key] = value
  
         print(f"{key} joins the {value} side!" )
  
     command = input()
  
-for key, value in users.items():
+for key, value in my_users.items():
     if value not in result:
         result[value] = []
         result[value].append(key)
