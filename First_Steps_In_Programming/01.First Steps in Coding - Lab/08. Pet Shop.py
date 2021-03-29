@@ -1,0 +1,6 @@
+dogs = int(input())
+other_animals = int(input())
+dogs_food = float(dogs * 2.5)
+other_food = float(other_animals * 4)
+total_cost = float(dogs_food + other_food)
+print(total_cost)

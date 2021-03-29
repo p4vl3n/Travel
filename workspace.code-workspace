@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.cursorStyle": "line-thin",
+		"markdown.preview.lineHeight": 20,
+		"editor.inlineHints.fontFamily": "Consolas, 'JetBrains Mono', monospace",
+		"debug.console.lineHeight": 20,
+		"editor.lineHeight": 20,
+		"editor.suggestLineHeight": 20,
+		"python.analysis.typeCheckingMode": "basic"
+	}
+}
