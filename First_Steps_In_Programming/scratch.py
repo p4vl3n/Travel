@@ -1,19 +1,17 @@
-import re
+budget = float(input())
+flour_price = float(input())
+egg_pack = 0.75 * flour_price
+litre_milk = 1.25 * flour_price
+quarter_milk = litre_milk / 4
+bread_cost = flour_price + egg_pack + quarter_milk
+bread_count = 0
+colored_eggs = 0
 
-def findWholeWord(w):
-    return re.compile(r'\b({0})\b'.format(w), flags=re.IGNORECASE).search
+while budget > bread_cost:
 
-findWholeWord('seek')('those who seek shall find')    # -> <match object>
-findWholeWord('word')('swordsmith')
-string = "Hello my friends I'm here to talk about the future technology in our universal existence"
-possible_answers = ['Yes', 'yes', 'Alright', 'alright', 'Ok', 'OK', 'ok', 'O.K.', 'o.k.', 'O.k.']
-if findWholeWord('Technology')(string):
-    print('logy')
-else:
-    print("why not")
-
-print("Welcome to the Party Friend!")
-Emotional_state = input("How are You Today?:")
-Positive_Emotion = ["good", "fine", "happy"]
-if any( [emotion in Emotional_state for emotion in Positive_Emotion] ):
-    print("That's Great! Happy to have you here!")
+    budget -= bread_cost
+    bread_count += 1
+    colored_eggs += 3
+    if bread_count % 3 == 0:
+        colored_eggs -= bread_count - 2
+print(f"You made {bread_count} cozonacs! Now you have {colored_eggs} eggs and {budget:.2f}BGN left.")
