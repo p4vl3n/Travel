@@ -1,3 +1,7 @@
+
+
+
+
 days = int(input())
 total_food = float(input())
 dog_food = 0
