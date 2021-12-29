@@ -137,8 +137,3 @@ class Bakery:
     def get_total_income(self):
         return f"Total income: {self.total_income:.2f}lv"
 
-
-shop = Bakery("Koko")
-print(shop.add_table("InsideTable", 1, 3))
-print(shop.get_free_tables_info())
-print(shop.get_total_income())
